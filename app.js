@@ -41,22 +41,6 @@ const computerImage2 = document.getElementById('cmpImg2')
 
 const game_value = {'desto' : 1 , 'finger' : 2, 'caw' : 3 , 'cawter' : 4 , 'oli' : 5}
 
-tailwind.config = {
-    theme: {
-        extend: {
-            backgroundImage: {
-                'hero-pattern': "url('/assets/backgrounds/Colored Shapes.svg')",
-                'curved-line': "url('/assets/backgrounds/Curve Line.svg')",
-                'hexagon': "url('/assets/backgrounds/Hexagon.svg')",
-                'simple-shiny': "url('/assets/backgrounds/Simple Shiny.svg')"
-            },
-            fontFamily: {
-                Kanit: ['Kanit'],
-                OpenSans: ['Open Sans']
-            }
-        },
-    },
-}
 
 let user_choices = []
 let computer_choices = []
