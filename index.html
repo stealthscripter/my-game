@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--OpenSanas-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+    
+        <!--Kanit Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-pattern': "url('/assets/backgrounds/Colored Shapes.svg')",
+                        'curved-line': "url('/assets/backgrounds/Curve Line.svg')",
+                        'hexagon': "url('/assets/backgrounds/Hexagon.svg')",
+                        'simple-shiny': "url('/assets/backgrounds/Simple Shiny.svg')"
+                    },
+                    fontFamily: {
+                        Kanit: ['Kanit'],
+                        OpenSans: ['Open Sans']
+                    }
+                },
+            },
+        }
+    </script>
+    <script defer src="/js/app.js"></script>
+</head>
+
+<body class="font-Kanit ">
+
+    <!--Modal-->
+
+    <section class="bg-curved-line overflow-hidden text-white h-lvh" id="sectionone">
+        <!--Welcome Section-->
+        <section class="p-6 m-5">
+            <main class="mb-10">
+                <h1 class=" text-4xl text-center capitalize"><span class="text-teal-300"> Desto | Finger</span></h1>
+            </main>
+            <!--Plasyers vs Computer-->
+            <div class="flex flex-row justify-center gap-x-8 my-2">
+                <div class="">
+                    <h2 class="text-3xl capitalize">Humans</h2>
+                </div>
+                <div class="">
+                    <h2 class="text-3xl capitalize">Vs</h2>
+                </div>
+                <div class="">
+                    <h2 class="text-3xl capitalize">Computer | AI </h2>
+                </div>
+            </div>
+        </section>
+
+        <!--Game Option -->
+        <section class=" p-2 m-5 mt-0">
+            <div class="flex items-center justify-center" id="checkboxgroup">
+                <div class="w-fit p-2 flex gap-x-4">
+                    <div class="">
+                        <input type="checkbox" id="desto1" value="desto" class="peer hidden" />
+                        <label for="desto1"
+                            class="select-none cursor-pointer rounded-lg border-2 border-gray-200
+                            py-3 px-6 font-bold text-gray-200 transition-colors duration-200 ease-in-out peer-checked:bg-gray-200 peer-checked:text-gray-900 peer-checked:border-gray-200 ">Desto</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" id="finger1" value="finger" class="peer hidden" />
+                        <label for="finger1"
+                            class="select-none cursor-pointer rounded-lg border-2 border-gray-200
+                            py-3 px-6 font-bold text-gray-200 transition-colors duration-200 ease-in-out peer-checked:bg-gray-200 peer-checked:text-gray-900 peer-checked:border-gray-200 ">Finger</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" id="caw1" value="caw" class="peer hidden" />
+                        <label for="caw1"
+                            class="select-none cursor-pointer rounded-lg border-2 border-gray-200
+                            py-3 px-6 font-bold text-gray-200 transition-colors duration-200 ease-in-out peer-checked:bg-gray-200 peer-checked:text-gray-900 peer-checked:border-gray-200 ">Caw</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" id="kawter1" value="cawter" class="peer hidden" />
+                        <label for="kawter1"
+                            class="select-none cursor-pointer rounded-lg border-2 border-gray-200
+                            py-3 px-6 font-bold text-gray-200 transition-colors duration-200 ease-in-out peer-checked:bg-gray-200 peer-checked:text-gray-900 peer-checked:border-gray-200 ">Cawter</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" id="oli1" value="oli" class="peer hidden" />
+                        <label for="oli1"
+                            class="select-none cursor-pointer rounded-lg border-2 border-gray-200
+                            py-3 px-6 font-bold text-gray-200 transition-colors duration-200 ease-in-out peer-checked:bg-gray-200 peer-checked:text-gray-900 peer-checked:border-gray-200 ">Oli</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex items-center justify-center mt-5">
+                <div
+                    class="mt-5 box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                    <button id="readyBtn" type="button">Ready</button>
+                </div>
+            </div>
+            </div>
+            <h1 class="text-center mt-8"> NB: Please select only two checkboxes while ensuring that the game remains
+                stable and does not crash.</h1>
+            <p class="text-center mt-5">StealthScripter | Natnael</p>
+        </section>
+    </section>
+
+    <!--Result Section-->
+
+    <section class="bg-curved-line hidden text-white p-2 font-Kanit h-lvh" id="sectiontwo">
+        <h1 class="mt-4 p-0 text-center text-4xl">Round <span id="roundNumber"></span></h1>
+        <main class="mt-5 grid grid-cols-2 items-center gap-4 p-2">
+            <div class="">
+                <h4 class="text-2xl text-center"><span id="userchoice1"></span>&nbsp;<span>|</span>&nbsp;<span
+                        id="userchoice2"></span></h4>
+                <h1 class="text-4xl text-center w-full">Human Fingers&nbsp;| <span id="userfingers"
+                        class="text-orange-600 "></span></h1>
+            </div>
+            <div class="">
+                <h4 class="text-2xl text-center"><span id="computerchoice1"></span>&nbsp;<span>|</span>&nbsp;<span
+                        id="computerchoice2"></span></h4>
+                <h1 class="text-4xl text-center w-full">Computer Fingers&nbsp;| <span id="computerfingers"
+                        class="text-orange-600"></span></h1>
+            </div>
+        </main>
+        <!-- finger image     -->
+        <main class="mx-auto mt-5 flex justify-around p-2">
+            <div class="grid grid-cols-2 gap-y-3 p-2 w-fit border-2 mx-auto items-center">
+                <div class="border-2 w-fit bg-white"><img id="userImg1" src="" alt=""></div>
+                <div class="border-2 w-fit bg-white"><img id="userImg2" src="" alt=""></div>
+            </div>
+            <div class="w-fit flex flex-col items-center justify-center">
+
+                <!--Round and Score DIsplay-->
+
+                <div class="w-fit flex flex-col items-center justify-center hidden afterStartContainer">
+                    <h1 class="text-4xl"><span id="userscore"></span> - <span id="computerscore"></span></h1>
+                </div>
+                <!--Set Finger DIv-->
+                <div class="items-center flex flex-col" id="fingerInputContainer">
+                    <h3 class="text-2xl">Set Fingers (max : 10 min : 1)</h3>
+                    <input id="inputfingers" max="10" min="1"
+                        class="mt-3 text-2xl px-4 border-b-2 bg-transparent text-center outline-none" type="number">
+                    <div
+                        class="mt-7 box-border relative z-30 inline-flex justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                        <button id="startbtn" type="button">Start</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-3 p-2 border-2 w-fit mx-auto items-center">
+                <div class="border-2 w-fit bg-white"><img id="cmpImg1" src="" alt=""></div>
+                <div class="border-2 w-fit bg-white"><img id="cmpImg2" src="" alt=""></div>
+            </div>
+        </main>
+        <div class="w-fit mx-auto hidden afterStartContainer">
+            <p id="winnerFinger" class="text-xl m-0">Desto</p>
+            <h1 class="text-2xl m-0" id="winner">Computer</h1>
+        </div>
+        <div class="flex gap-x-10 mt-2 justify-center hidden afterStartContainer">
+            <div
+                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                <button id="againBtn" type="button">Play again</button>
+            </div>
+            <div
+                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                <button id="setBtn" type="button">Set Again</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
