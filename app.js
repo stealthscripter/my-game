@@ -215,24 +215,24 @@ const changeImage = (computerFingerAmount , humanFingerAmounts) => {
     userImage1.src = ""
     userImage2.src = ""
     if (computerFingerAmount <= 5){
-        computerImage2.src= `\assets\finger-${0}.png`
-        computerImage1.src= `\assets\finger-${computerFingerAmount}.png`
+        computerImage2.src= `finger-${0}.png`
+        computerImage1.src= `finger-${computerFingerAmount}.png`
     }
     else{
         if(computerFingerAmount % 2 == 0){
-            computerImage1.src= `\assets\finger-${computerFingerAmount / 2}.png`
-            computerImage2.src= `\assets\finger-${computerFingerAmount / 2}.png`
+            computerImage1.src= `finger-${computerFingerAmount / 2}.png`
+            computerImage2.src= `finger-${computerFingerAmount / 2}.png`
         }
         else{
             roundNumber = Math.floor(computerFingerAmount/2)
-            computerImage1.src= `\assets\finger-${roundNumber + 1}.png`
-            computerImage2.src= `\assets\finger-${roundNumber}.png`
+            computerImage1.src= `finger-${roundNumber + 1}.png`
+            computerImage2.src= `finger-${roundNumber}.png`
         }
     }
 
     if (humanFingerAmount <= 5){
-        userImage1.src= `\assets\finger-${0}.png`
-        userImage2.src= `\assets\finger-${humanFingerAmount}.png`
+        userImage1.src= `finger-${0}.png`
+        userImage2.src= `finger-${humanFingerAmount}.png`
         
     }
     else{
