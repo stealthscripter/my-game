@@ -118,7 +118,8 @@ const makeComputerChoice = (userchoiceFunc) =>{
 
 
 readyBtn.addEventListener('click', ()=>{
-    if(user_choices.length > 1){
+    user_choices = makeUserChoice()
+    if(user_choices.length == 2){
         user_choices = makeUserChoice()
         computer_choices = makeComputerChoice(makeUserChoice)
         console.log(user_choices )
