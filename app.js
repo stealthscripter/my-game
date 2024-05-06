@@ -208,7 +208,6 @@ setBtn.addEventListener('click',() => {
 })
 
 const changeImage = (computerFingerAmount , humanFingerAmounts) => {
-
     let humanFingerAmount = humanFingerAmounts()
     computerImage1.src = ""
     computerImage2.src = ""
