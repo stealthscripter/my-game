@@ -353,3 +353,25 @@ const changeImage = (computerFingerAmount , humanFingerAmounts) => {
 //     console.log(computerChoiceValue)
 
 //     let totalFingerValue
+// againBtn.addEventListener('click', () => {    
+//     userFingers.value = ''
+//     secondSection.classList.remove('hidden')
+//     resultSection.classList.add('hidden')
+// })
+
+
+// setBtn.addEventListener('click',() => {
+//     document.querySelectorAll('[type="checkbox"]').forEach(item => {
+//         item.checked = false
+//     })
+//      userFingers.value = ''
+//      userScore = 0, computerScore = 0, rounds = 0
+//      userChoice = []
+//      computerChoice = []
+//      userChoiceValue = []
+//      computerChoiceValue = []
+    
+//     resultSection.classList.add('hidden')
+//     secondSection.classList.add('hidden')
+//     firstSection.classList.remove('hidden')
+// })
