@@ -259,3 +259,97 @@ const changeImage = (computerFingerAmount , humanFingerAmounts) => {
         }
     }
 }
+
+// const amharicObj = {
+//     'desto' : 'ደስቶ',
+//     'finger' : 'ፊንገር',
+//     'caw' : 'ካው',
+//     'cawter' : 'ካውተር',
+//     'oli' : 'ኦሊ'
+// }
+
+// let computerFingers
+
+// const fingerValues = ['desto','finger','caw','cawter','oli']
+
+
+// // Check CheckBOXS
+// function onlyOneCheckBox() {
+// 	var checkboxgroup = document.getElementById('checkboxgroup').getElementsByTagName("input");
+	
+//     //Note #2 Change max limit here as necessary
+//     var limit = 2;
+  
+// 	for (var i = 0; i < checkboxgroup.length; i++) {
+// 		checkboxgroup[i].onclick = function() {
+// 			var checkedcount = 0;
+// 				for (var i = 0; i < checkboxgroup.length; i++) {
+// 				checkedcount += (checkboxgroup[i].checked) ? 1 : 0;
+// 			}
+// 			if (checkedcount > limit) {
+// 				console.log("You can select maximum of " + limit + " checkbox.");
+// 				alert("You can select maximum of " + limit + " checkbox.");
+// 				this.checked = false;
+// 			}
+// 		}
+// 	}
+// }
+// onlyOneCheckBox();
+
+// let rounds = 0
+
+// // Choice Text
+// let userChoice1 = ''
+// let userChoice2 = ''
+// let computerChoice1 = ''
+// let computerChoice2 = ''
+
+// // Score Tracker
+// let userScore = 0
+// let computerScore = 0
+
+
+// let resultFinger = ''
+// let winner = ''
+
+// // Choice Array
+// let userChoice = []
+// let computerChoice = []
+
+// // Choice Value by Number Array
+// let userChoiceValue = []
+// let computerChoiceValue = []
+
+// let history = []
+// const fingerComparision = {'desto' : 1 , 'finger' : 2, 'caw' : 3 , 'cawter' : 4 , 'oli' : 5}
+
+// function getKeyByValue(obj,value){
+//     return Object.keys(obj).filter(key => obj[key] === value) 
+// }
+
+// const makeComputerChoice = (userChoice) =>{
+//     const userChoice1 = fingerValues[fingerValues.indexOf(userChoice[0])]
+//     const userChoice2 = fingerValues[fingerValues.indexOf(userChoice[1])]
+//     computerChoice = fingerValues.filter(function(value,index,arr){
+//         return value != userChoice1 && value!= userChoice2 })
+//     let randomIndex = Math.floor(Math.random() * 3)
+//     console.log(randomIndex)
+//     if (randomIndex > -1){
+//         computerChoice.splice(randomIndex,1)
+//     }
+// }
+
+// const pushChoiceToArray = (computerChoice , userChoice) =>{
+//     for(let i =0 ; i < 2; i++){
+//         userChoiceValue.push(fingerComparision[userChoice[i]])
+//         computerChoiceValue.push(fingerComparision[computerChoice[i]])
+//     }
+// }
+// const checkWinner = (userChoice , computerChoice , computerFingers , userFingers) =>{   
+    
+//     pushChoiceToArray(computerChoice , userChoice)
+
+//     console.log(userChoiceValue)
+//     console.log(computerChoiceValue)
+
+//     let totalFingerValue
